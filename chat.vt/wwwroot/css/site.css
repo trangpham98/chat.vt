@@ -1,0 +1,200 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+body {
+    height: 1000px;
+    background: #E8E8E8;
+}
+
+.icon-main {
+    width: 15%;
+    border-color: #353224;
+    border: solid;
+    border-bottom: none;
+    border-radius: 3px;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
+
+    .icon-main ul li {
+        list-style-type: none;
+        float: left;
+    }
+
+    .icon-main #X {
+        float: right;
+        padding-right: 10px;
+    }
+
+    .icon-main #chat {
+        width: 130px;
+    }
+
+
+.main {
+    width: 250px;
+    height: 100%;
+    overflow: scroll;
+    float: right;
+    border-left: solid #353224 1px;
+    position: relative;
+    display: none;
+    border-bottom: none;
+}
+
+    .main div {
+        margin: 5px;
+    }
+
+.search {
+    width: 250px;
+    margin: 0px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: none;
+}
+
+    .search input {
+        width: 100%;
+        /*text-align: center;*/
+        padding-left: 42px;
+        border: none;
+    }
+
+        .search input:hover,
+        .search input:focus,
+        .search input:active {
+            outline: none;
+        }
+
+    .search i {
+        position: absolute;
+        right: 88%;
+        top: 26%;
+    }
+
+.tab-chat {
+    width: 280px;
+    height: 355px;
+    float: right;
+    background-color: #ffffff;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    /* position: fixed; */
+    bottom: 0%;
+    /* right: 265px; */
+    /*display: none;*/
+    /* position: absolute; */
+    margin-left: 10px;
+}
+
+    .tab-chat .name {
+        width: 100%;
+        height: 43px;
+        padding: 5px;
+        box-shadow: 0 2px 1px rgba(0, 0, 0, .1);
+    }
+
+        .tab-chat .name ul li {
+            list-style-type: none;
+        }
+
+        .tab-chat .name #name-user {
+            float: left;
+        }
+
+        .tab-chat .name #X-tab-chat {
+            float: right;
+            border: none;
+            background-color: #ffffff;
+        }
+
+        .tab-chat .name i {
+            padding-top: 8px;
+            color: #385898;
+            float: right;
+        }
+
+    .tab-chat i:hover {
+        color: red;
+    }
+
+    .tab-chat .message {
+        height: 247px;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+    .tab-chat input {
+        width: 100%;
+        height: 32px;
+        padding: 10px 8px 6px;
+        border: none;
+        box-shadow: 0px -2px 0px rgba(0, 0, 0, .1);
+    }
+
+        .tab-chat input:hover,
+        .tab-chat input:focus,
+        .tab-chat input:active {
+            outline: none;
+        }
+
+    .tab-chat .send i {
+        font-size: 18px;
+        color: #828282;
+        padding-left: 20px;
+    }
+
+    .tab-chat .send #icon-send {
+        float: right;
+        padding-right: 30px;
+    }
+
+    .tab-chat .send i:hover {
+        color: #1d2129;
+    }
+
+
+
+.chat-wrap {
+    position: fixed;
+    height: 355px;
+    bottom: 0;
+    width: 83%;
+}
